@@ -21,6 +21,10 @@ public class TV {
     System.out.println("the TV has been turned on, you are ready to watch your favorite shows, sporting events & movies");
   }
 
+  public void powerOff() {
+    System.out.println("the TV has turned off, thanks for watching");
+  }
+
   public String getModel() {
     return model;
   }

@@ -35,6 +35,6 @@ public class Main {
     LivingRoom theLR = new LivingRoom(lrDims, theCouch, theCoffeeTable, theTV);
 
     theLR.recline();
-
+    theLR.getLrTV().powerOff();
   }
 }
