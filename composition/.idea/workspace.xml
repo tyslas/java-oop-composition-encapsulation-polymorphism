@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5044c185-6077-4765-9dab-8b8b4a5ed0c3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/tito/CoffeeTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/tito/Couch.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/tito/LivingRoom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/tito/TV.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/composition-pt1/com/tito/Main.class" afterPath="$PROJECT_DIR$/out/production/composition-pt1/com/tito/Main.class" />
-      <change beforePath="$PROJECT_DIR$/src/com/tito/Main.java" afterPath="$PROJECT_DIR$/src/com/tito/Main.java" />
-    </list>
+    <list default="true" id="5044c185-6077-4765-9dab-8b8b4a5ed0c3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -436,12 +428,12 @@
       <updated>1522077839005</updated>
       <workItem from="1522077840484" duration="2714000" />
       <workItem from="1522083050071" duration="785000" />
-      <workItem from="1522083993457" duration="6160000" />
+      <workItem from="1522083993457" duration="6202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9659000" />
+    <option name="totallyTimeSpent" value="9701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2880" y="23" width="1600" height="877" extended-state="6" />
@@ -455,7 +447,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28498074" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28498074" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
