@@ -26,6 +26,9 @@ public class Main {
     System.out.println("remaining health of player1 is: " + player1.healthRemaining());
 
     PlayerEnhanced player2 = new PlayerEnhanced("Chase", 85, "earth breaker");
-    System.out.println("initial health of player2 is: " + player2.getHitPoints()); 
+    System.out.println("initial health of player2 is: " + player2.getHitPoints() + "\n");
+
+    Printer officePrinter = new Printer(50, 5, true, 100);
+    officePrinter.printPage(25, true);
   }
- }
+}
