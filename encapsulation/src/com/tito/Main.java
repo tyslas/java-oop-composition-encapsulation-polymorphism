@@ -29,6 +29,11 @@ public class Main {
     System.out.println("initial health of player2 is: " + player2.getHitPoints() + "\n");
 
     Printer officePrinter = new Printer(50, 5, true, 100);
-    officePrinter.printPage(25, true);
+    officePrinter.printPage(51, true);
+    officePrinter.fillToner(30);
+    officePrinter.printPage(51, true);
+//    officePrinter.fillPaper(-5);
+//    officePrinter.fillPaper(60);
+    officePrinter.fillPaper(20);
   }
 }

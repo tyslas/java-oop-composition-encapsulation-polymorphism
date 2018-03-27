@@ -30,23 +30,33 @@ public class Printer {
       System.out.println("must reload printer paper before printing");
     }
     else if (numPages > 0 && tonerLvl < numPages){
-      System.out.println("the toner must be filled before printing");
+      System.out.println("not enough toner to print all the pages, please fill toner before proceeding");
     } else if (dblSided == true) {
       this.pagesPrinted += numPages;
       this.printerPaper -= (numPages/2);
       this.tonerLvl -= numPages;
-      System.out.println("this printer has now printed " + this.pagesPrinted + " pages");
-      System.out.println("toner level: " + this.tonerLvl);
+      System.out.println("toner level: " + this.tonerLvl + "%");
       System.out.println("pages printed: " + this.pagesPrinted);
       System.out.println("pages left: " + this.printerPaper);
     } else {
       this.pagesPrinted += numPages;
       this.printerPaper -= numPages;
       this.tonerLvl -= numPages;
-      System.out.println("this printer has now printed " + this.pagesPrinted + " pages");
-      System.out.println("toner level: " + this.tonerLvl);
+      System.out.println("toner level: " + this.tonerLvl + "%");
       System.out.println("pages printed: " + this.pagesPrinted);
       System.out.println("pages left: " + this.printerPaper);
+    }
+  }
+
+  public void fillPaper(int numPages) {
+    if ((numPages + this.printerPaper) > 100) {
+      System.out.println("printer can hold a maximum of 100 pages in the paper reservoir");
+      System.out.println("please try loading fewer pages");
+    } else if (numPages < 1) {
+      System.out.println("must load at least 1 page, cannot load negative pages");
+    } else {
+      this.printerPaper += numPages;
+      System.out.println("total pages in printer: " + this.printerPaper);
     }
   }
 
