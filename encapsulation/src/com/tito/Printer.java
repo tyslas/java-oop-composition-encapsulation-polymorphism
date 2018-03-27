@@ -6,21 +6,25 @@ public class Printer {
   private boolean isDuplex;
   private int printerPaper;
 
-  public Printer(int tonerLvl, int pagesPrinted, boolean isDuplex, int printerPaper) {
-    this.tonerLvl = tonerLvl;
-    this.pagesPrinted = pagesPrinted;
-    this.isDuplex = isDuplex;
-    this.printerPaper = printerPaper;
+  public Printer(int tonerLvl, boolean isDuplex, int printerPaper) {
+    if (tonerLvl >= 0 && tonerLvl <= 100 && printerPaper >= 0 && printerPaper <= 100) {
+      this.tonerLvl = tonerLvl;
+      this.pagesPrinted = 0;
+      this.isDuplex = isDuplex;
+      this.printerPaper = printerPaper;
+    } else {
+      System.out.println("check to make sure that you are trying to initialize the new Printer object with a toner level from 0-100%, inclusive, and that the amount of printer paper is from 0-100 pages, inclusive");
+    }
   }
 
   public void fillToner(int fillPercent) {
     if ((fillPercent + tonerLvl <= 0) || (fillPercent + tonerLvl > 100)) {
       System.out.println("toner level must be from 0-100%");
-      System.out.println("please fill a different amount");
+      System.out.println("please fill an amount that will result with the level from 0-100%");
     } else {
       this.tonerLvl += fillPercent;
+      System.out.println("you filled the toner up " + fillPercent + "%");
     }
-    System.out.println("the toner level is now at " + this.tonerLvl + "%");
   }
 
   public void printPage(int numPages, boolean dblSided) {
