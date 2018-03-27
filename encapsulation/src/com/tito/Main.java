@@ -35,5 +35,7 @@ public class Main {
 //    officePrinter.fillPaper(-5);
 //    officePrinter.fillPaper(60);
     officePrinter.fillPaper(20);
+    officePrinter.fillToner(30);
+    officePrinter.printPage(30, false);
   }
 }

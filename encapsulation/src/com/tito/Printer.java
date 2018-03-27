@@ -32,18 +32,23 @@ public class Printer {
     else if (numPages > 0 && tonerLvl < numPages){
       System.out.println("not enough toner to print all the pages, please fill toner before proceeding");
     } else if (dblSided == true) {
+      int numPrinted = calcPagesUsed(numPages);
       this.pagesPrinted += numPages;
-      this.printerPaper -= (numPages/2);
+      this.printerPaper -= numPrinted;
       this.tonerLvl -= numPages;
+      System.out.println("printing double-sided pages");
+      System.out.println("printed " + numPages + " pages for this job");
       System.out.println("toner level: " + this.tonerLvl + "%");
-      System.out.println("pages printed: " + this.pagesPrinted);
+      System.out.println("total pages printed: " + this.pagesPrinted);
       System.out.println("pages left: " + this.printerPaper);
     } else {
       this.pagesPrinted += numPages;
       this.printerPaper -= numPages;
       this.tonerLvl -= numPages;
+      System.out.println("printing single-sided pages");
+      System.out.println("printed " + numPages + " pages for this job");
       System.out.println("toner level: " + this.tonerLvl + "%");
-      System.out.println("pages printed: " + this.pagesPrinted);
+      System.out.println("total pages printed: " + this.pagesPrinted);
       System.out.println("pages left: " + this.printerPaper);
     }
   }
@@ -56,6 +61,7 @@ public class Printer {
       System.out.println("must load at least 1 page, cannot load negative pages");
     } else {
       this.printerPaper += numPages;
+      System.out.println("you loaded " + numPages + " pages");
       System.out.println("total pages in printer: " + this.printerPaper);
     }
   }
@@ -68,11 +74,19 @@ public class Printer {
     }
   }
 
+  private int calcPagesUsed(int numPages) {
+    if (numPages % 2 == 0) {
+      return numPages / 2;
+    } else {
+      return (numPages / 2) + 1;
+    }
+  }
+
   public int getTonerLvl() {
     return tonerLvl;
   }
 
-  public int getPagesPrinted() {
+  public int PagesPrinted() {
     return pagesPrinted;
   }
 
