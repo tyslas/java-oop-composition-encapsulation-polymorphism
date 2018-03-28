@@ -22,8 +22,11 @@ public class Main {
     // For the two add'tnl classes you may need to get pricing for the base class, then add add'tns to find the total
 
     Burger burger = new Burger(true, true, true, true);
-    System.out.println("base price: $" + burger.getBasePrice());
     System.out.println("additions price: $" + burger.getAddtnsPrice());
-    System.out.println("total price: $" + burger.getTotalPrice());
+    System.out.println("total price: $" + burger.getTotalPrice() + "\n");
+
+    PopeyeBurger popeye = new PopeyeBurger(true, true, true, true);
+    System.out.println("additions price: $" + popeye.getAddtnsPrice());
+    System.out.println("total price: $" + popeye.getTotalPrice());
   }
 }

@@ -29,7 +29,7 @@ public class Burger {
     this.avoPrice = 2;
     this.onionPrice = 1;
 
-    System.out.println("base price: $" + this.basePrice + "\n");
+    System.out.println("Bill's base price: $" + this.basePrice + "\n");
     addLettuce(lettuce);
     addTomato(tomato);
     addAvocado(avocado);
