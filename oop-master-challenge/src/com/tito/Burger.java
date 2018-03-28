@@ -29,7 +29,6 @@ public class Burger {
     this.avoPrice = 2;
     this.onionPrice = 1;
 
-    System.out.println("Bill's base price: $" + this.basePrice + "\n");
     addLettuce(lettuce);
     addTomato(tomato);
     addAvocado(avocado);
@@ -39,23 +38,31 @@ public class Burger {
   }
 
   private void addLettuce(boolean lettuce) {
-    if (lettuce) this.addtnsPrice += this.lettucePrice;
-    System.out.println("adding lettuce for price of $" + this.lettucePrice);
+    if (lettuce) {
+      this.addtnsPrice += this.lettucePrice;
+      System.out.println("Burger -> adding lettuce for price of $" + this.lettucePrice);
+    }
   }
 
   private void addTomato(boolean tomato) {
-    if (tomato) this.addtnsPrice += this.tomatoPrice;
-    System.out.println("adding tomato for price of $" + this.tomatoPrice);
+    if (tomato) {
+      this.addtnsPrice += this.tomatoPrice;
+      System.out.println("Burger -> adding tomato for price of $" + this.tomatoPrice);
+    }
   }
 
   private void addAvocado(boolean avocado) {
-    if (lettuce) this.addtnsPrice += this.avoPrice;
-    System.out.println("adding avocado for price of $" + this.avoPrice);
+    if (avocado) {
+      this.addtnsPrice += this.avoPrice;
+      System.out.println("Burger -> adding avocado for price of $" + this.avoPrice);
+    }
   }
 
   private void addOnion(boolean onion) {
-    if (onion) this.addtnsPrice += this.onionPrice;
-    System.out.println("adding onion for price of $" + this.onionPrice);
+    if (onion) {
+      this.addtnsPrice += this.onionPrice;
+      System.out.println("Burger -> adding onion for price of $" + this.onionPrice);
+    }
   }
 
   public int getBasePrice() {
