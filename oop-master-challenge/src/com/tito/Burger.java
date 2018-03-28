@@ -92,4 +92,12 @@ public class Burger {
   public int getTotalPrice() {
     return totalPrice;
   }
+
+  public String getBun() {
+    return bun;
+  }
+
+  public String getMeat() {
+    return meat;
+  }
 }

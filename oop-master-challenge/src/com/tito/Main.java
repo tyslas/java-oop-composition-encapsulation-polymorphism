@@ -21,20 +21,26 @@ public class Main {
       // show the add'tn name, add'tn price, and total price (base price + all add'tns)
     // For the two add'tnl classes you may need to get pricing for the base class, then add add'tns to find the total
 
-    System.out.println("Bill's Burger");
+    System.out.println("Bill's Burger - the 'basic'");
     Burger burger = new Burger(true, true, true, true);
+    System.out.println("bun type: " + burger.getBun());
+    System.out.println("meat type: " + burger.getMeat());
     System.out.println("base price: $" + burger.getBasePrice());
     System.out.println("additions price: $" + burger.getAddtnsPrice());
     System.out.println("total price: $" + burger.getTotalPrice() + "\n");
 
-    System.out.println("Popeye Burger");
+    System.out.println("Popeye Burger - the 'healthy'");
     PopeyeBurger popeye = new PopeyeBurger(false, true, true, false, true);
+    System.out.println("bun type: " + popeye.getBun());
+    System.out.println("meat type: " + popeye.getMeat());
     System.out.println("base price: $" + popeye.getBasePrice());
     System.out.println("additions price: $" + popeye.getAddtnsPrice());
     System.out.println("total price: $" + popeye.getTotalPrice() + "\n");
 
-    System.out.println("Deluxe Burger");
+    System.out.println("Deluxe Burger - chips & drink");
     DeluxeBurger luxe = new DeluxeBurger(true, true, true, false);
+    System.out.println("bun type: " + luxe.getBun());
+    System.out.println("meat type: " + luxe.getMeat());
     System.out.println("base price: $" + luxe.getBasePrice());
     System.out.println("additions price: $" + luxe.getAddtnsPrice());
     System.out.println("total price: $" + luxe.getTotalPrice() + "\n");

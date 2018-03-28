@@ -51,4 +51,14 @@ public class PopeyeBurger extends Burger {
   public int getTotalPrice() {
     return totalPrice;
   }
+
+  @Override
+  public String getBun() {
+    return bun;
+  }
+
+  @Override
+  public String getMeat() {
+    return meat;
+  }
 }
